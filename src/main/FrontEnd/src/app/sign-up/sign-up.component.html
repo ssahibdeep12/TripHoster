@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+  <head>
+    <title>New User Sign Up</title>
+  </head>
+
+  <body>
+    <form div="SignUpForm">
+      <!-- New User Sign Up-->
+      <small *ngIf = "isInvalidSignUp">{{errorMessage}}</small>
+      <H2 name = "signUpHeader"> Sign Up </H2> 
+      <input type="text" placeholder = "First Name" name ="First Name" [(ngModel)]= "firstName" style="width: 200px; height:15px">
+    <br>
+      <input type="text"  placeholder= "Last Name" name = "Last Name" [(ngModel)]="lastName" style ="width: 200px; height:15px">
+    <br>
+      <input type="text" placeholder ="Email Address" name =" Email Address" [(ngModel)]="emailAddress" style="width: 200px; height:15px">
+    <br>
+    <input type = "password" placeholder ="password" name = "password" [(ngModel)]="password" style="width: 200px; height:15px">
+    <br>
+    <input type = "text" placeholder = "username" name = "userName" [(ngModel)]="userName" style="width: 200px; height:15px">
+    <br>
+    <label>Birthday:</label>
+     <input type="date" id ="DOB">
+    <br>
+    <button name = "signUpButton" (click)="handleSignIn()"> Sign Up</button>
+     </form>
+  </body>
+
+    

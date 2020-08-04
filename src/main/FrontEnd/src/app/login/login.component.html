@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset = "UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      TripHoster - Login or Sign up
+    </title>
+  </head>
+
+    <body>
+      <!-- Header -->
+      <H1 id ="Logo">TripHoster </H1>
+        
+      <!-- Existing User Login-->
+        <!-- <form div= "UserLogin" accept-charset="UTF-8"> -->
+        <small *ngIf = "isInvalidLogin">{{message}}</small>
+          <H2 name ="userLogin"> User Login</H2>
+      
+          <label>User Name: </label>
+         <input type="text" name = "UserName" [(ngModel)]= "username" style="width: 200px; height:15px" >
+          <br>
+          <label>Password: </label>
+         <input type="password" name = "Password" [(ngModel)]= "password" style="width:200px;height: 15px" >
+          <br>
+          <button name = "loginButton" id ="loginButton" (click)="handleLogin()">Login</button>
+          <a routerLink= "Password-Reset" > Forgot Password?</a>
+          <br>
+      <!-- </form> -->
+   </body>
+    
+
+</html>

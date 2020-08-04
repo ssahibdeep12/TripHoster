@@ -1,0 +1,12 @@
+.footerText {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: #222222;
+	font-size: 15px;
+}
+
+
+.fa {
+	color:white;
+}

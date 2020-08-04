@@ -1,0 +1,20 @@
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="navbar-brand">
+      <a href="https://TripHoster.com">TripHoster</a>
+    </div>
+    <ul class="navbar-nav">
+      <li><a routerLink="/travelPackages" class="nav-link">Travel Packages</a></li>
+      <li><a routerLink="/flights" class="nav-link">Flights</a></li>
+      <li><a routerLink="/stays" class="nav-link">Stays</a></li>
+      <li><a routerLink="/carRentals" class="nav-link">Car Rentals</a></li>
+    </ul>
+
+    <ul class="navbar-nav navbar-collapse justify-content-end">
+      <li><a *ngIf="!authService.isUserLoggedIn()" routerLink="/login" class="nav-link">Login</a></li>
+      <li><a *ngIf="authService.isUserLoggedIn()" routerLink="/logout" class="nav-link">Logout</a></li>
+      <li><a routerLink="/SignUp" class="nav-link">Sign Up</a></li>
+    </ul>
+
+  </nav>
+</header>
